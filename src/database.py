@@ -1,5 +1,5 @@
 from passlib.context import CryptContext
-
+ 
 _pwd = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 users_db: dict = {
