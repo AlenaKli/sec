@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Comments</title>
+</head>
+<body>
+<h2>Comments</h2>
+<form method="post" action="/comments">
+    <textarea name="comment" rows="3" cols="50" placeholder="Write a comment..."></textarea>
+    <br><br>
+    <button type="submit">Send</button>
+</form>
+<hr>
+{% for c in comments %}
+    <p>{{ c }}</p>
+{% endfor %}
+</body>
+</html>
