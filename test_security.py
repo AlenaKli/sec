@@ -3,7 +3,7 @@ from src.main import app
 
 client = TestClient(app)
 
-
+ 
 def get_token(username: str, password: str) -> str:
     r = client.post("/login", data={"username": username, "password": password})
     assert r.status_code == 200, f"Login failed for {username}: {r.text}"
