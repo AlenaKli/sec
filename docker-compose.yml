@@ -10,3 +10,4 @@ services:
       - ./logs:/app/logs
     env_file:
       - .env
+ 
